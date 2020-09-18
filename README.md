@@ -2,6 +2,8 @@
 
 # 这是一个标题
 
+`这是一行一句,用一对反引号就可以啦`
+
 ```javascript
 let name='chan'
 console.log('go go go')
