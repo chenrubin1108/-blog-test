@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <meta name="author" content="陈如斌" />
+    <title></title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .parent {
+        height: 200px;
+        overflow: hidden;
+      }
+      .parent div {
+        overflow: hidden;
+        border-radius: 50%;
+        /* height: 200px; */
+        /* overflow: hidden; */
+
+        /* border-radius: 50%; */
+      }
+      .parent > div {
+        width: 400px;
+        height: 400px;
+        /* border: 1px solid hsl(0, 50%, 50%); */
+        /* margin: 10px; */
+        background: red;
+      }
+      .parent > div > div {
+        height: 380px;
+        /* border: 1px solid hsl(60, 50%, 50%); */
+        margin: 10px;
+        background: orange;
+      }
+      .parent > div > div > div {
+        height: 360px;
+        /* border: 1px solid yellow; */
+        margin: 10px;
+        background-color: yellow;
+      }
+
+      .parent > div > div > div > div {
+        height: 340px;
+        /* border: 1px solid green; */
+        margin: 10px;
+        background-color: green;
+      }
+      .parent > div > div > div > div > div {
+        height: 320px;
+        /* border: 1px solid #01ffff; */
+        margin: 10px;
+        background-color: #01ffff;
+      }
+      .parent > div > div > div > div > div > div {
+        height: 300px;
+        /* border: 1px solid blue; */
+        margin: 10px;
+        background-color: blue;
+      }
+      .parent > div > div > div > div > div > div > div {
+        height: 280px;
+        /* border: 1px solid purple; */
+        margin: 10px;
+        background-color: purple;
+      }
+      .parent > div > div > div > div > div > div > div > div {
+        height: 260px;
+        /* border: 1px solid white; */
+        margin: 10px;
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div>
+        <div>
+          <div>
+            <div>
+              <div>
+                <div>
+                  <div>
+                    <div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
