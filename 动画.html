@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <meta name="author" content="陈如斌" />
+    <title></title>
+    <style>
+      #wrapeer {
+        width: 100px;
+
+        background-color: red;
+      }
+      #wrapeer.start {
+        animation: ease 5s xxx;
+      }
+      @keyframes xxx {
+        0% {
+          transform: none;
+        }
+        50% {
+          transform: translateX(100px);
+        }
+        100% {
+          transform: translateX(200px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrapeer">123</div>
+
+    <script>
+      wrapeer.classList.add("start");
+    </script>
+  </body>
+</html>

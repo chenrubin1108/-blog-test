@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <meta name="author" content="陈如斌" />
+    <title></title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      nav {
+        width: 60px;
+        height: 60px;
+        background-color: red;
+        border-radius: 50% 50% 0 0;
+      }
+      footer {
+        width: 60px;
+        height: 60px;
+        background-color: red;
+        /* transform: rotate(45deg); */
+        transform: rotate(45deg) translate(-42px, -102px);
+        border-radius: 50% 50% 0 0;
+      }
+      .heart nav {
+        position: absolute;
+        /* top: 50px; */
+        bottom: 50px;
+        left: -50px;
+        transform: rotate(-45deg) translate(42px, -31px);
+      }
+
+      main {
+        transform: rotate(45deg);
+        width: 60px;
+        height: 60px;
+        background-color: red;
+      }
+      .heart {
+        margin: 100px;
+        position: relative;
+        transition: all 1s;
+        display: inline-block;
+      }
+      .heart:hover {
+        transform: scale(1.2);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="heart">
+      <nav></nav>
+      <main></main>
+      <footer></footer>
+    </div>
+    <script></script>
+  </body>
+</html>
